@@ -17,7 +17,7 @@ public enum CleaningResults {
     var toMessage: String {
         switch self {
         case .success:
-            return CleaningResults.successString
+            return CleaningResults.fatalFailureString
         case .fatalFailure:
             return CleaningResults.fatalFailureString
         case .failure(let error):

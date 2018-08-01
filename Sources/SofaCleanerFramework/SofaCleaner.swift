@@ -19,19 +19,19 @@ public class SofaCleaner {
     }
 
     public func clean(sofa: Sofa) -> CleaningResults {
-        let range = 0..<sofa.cushionCount
+        let range = 0...sofa.cushionCount
         do {
             try range.forEach { index in
                 try sofa.cleanCushion(at: index, with: tube)
             }
         } catch {
             if let error = error as? SofaCleanerError {
-                return CleaningResults.failure(error)
+                return .failure(error)
             } else {
-                return CleaningResults.fatalFailure
+                return .fatalFailure
             }
         }
 
-        return CleaningResults.success
+        return .success
     }
 }
