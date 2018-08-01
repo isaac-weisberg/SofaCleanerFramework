@@ -6,9 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A089A5CA2111891B008EFFF5 /* SofaCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A089A5C92111891B008EFFF5 /* SofaCleaner.swift */; };
+		A089A5CC211189CE008EFFF5 /* Sofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = A089A5CB211189CE008EFFF5 /* Sofa.swift */; };
+		A089A5CE21118B97008EFFF5 /* SofaCleanerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A089A5CD21118B97008EFFF5 /* SofaCleanerError.swift */; };
+		A089A5D021118C60008EFFF5 /* CleaningResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A089A5CF21118C60008EFFF5 /* CleaningResults.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A089A5BF21118851008EFFF5 /* SofaCleanerFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SofaCleanerFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A089A5C321118851008EFFF5 /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
+		A089A5C92111891B008EFFF5 /* SofaCleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofaCleaner.swift; sourceTree = "<group>"; };
+		A089A5CB211189CE008EFFF5 /* Sofa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sofa.swift; sourceTree = "<group>"; };
+		A089A5CD21118B97008EFFF5 /* SofaCleanerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofaCleanerError.swift; sourceTree = "<group>"; };
+		A089A5CF21118C60008EFFF5 /* CleaningResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				A089A5C321118851008EFFF5 /* iOS.plist */,
+				A089A5C92111891B008EFFF5 /* SofaCleaner.swift */,
+				A089A5CB211189CE008EFFF5 /* Sofa.swift */,
+				A089A5CD21118B97008EFFF5 /* SofaCleanerError.swift */,
+				A089A5CF21118C60008EFFF5 /* CleaningResults.swift */,
 			);
 			path = SofaCleanerFramework;
 			sourceTree = "<group>";
@@ -95,6 +110,7 @@
 				TargetAttributes = {
 					A089A5BE21118851008EFFF5 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,6 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A089A5CE21118B97008EFFF5 /* SofaCleanerError.swift in Sources */,
+				A089A5CC211189CE008EFFF5 /* Sofa.swift in Sources */,
+				A089A5CA2111891B008EFFF5 /* SofaCleaner.swift in Sources */,
+				A089A5D021118C60008EFFF5 /* CleaningResults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/SofaCleanderFramework/iOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/SofaCleanerFramework/iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -279,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/SofaCleanderFramework/iOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/SofaCleanerFramework/iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
